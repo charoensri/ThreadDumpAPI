@@ -1,8 +1,8 @@
 #!/bin/bash
 #Run against DT1, 5 iterations, default 5-sec delay
-#./threads-dump-v3.sh "https://comaus-acres-dt1.pega.net" Pega-web-6d9d95dd7f-ws7c9 5 "operator-pyIdentifier:password"
+#./threads-dump-v3.sh "https://<host>" Pega-web-6d9d95dd7f-ws7c9 5 "operator-pyIdentifier:password"
 #Run against STG1, 10 iterations, with 4-sec:
-#./threads-dump-v3.sh "https://comaus-acres-stg1.pega.net" pega-web-5f76988bfc-6z9hq 10 "operator-pyIdentifier:password" 4
+#./threads-dump-v3.sh "https://<host>" pega-web-5f76988bfc-6z9hq 10 "operator-pyIdentifier:password" 4
 
 # Check if user passed required arguments
 if [ $# -lt 4 ]; then
