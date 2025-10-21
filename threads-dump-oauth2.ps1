@@ -3,7 +3,7 @@
 # OAuth2 Bearer token version
 #
 #.\threads-dump-oauth2.ps1 `
-#  -BaseUrl "https://comaus-acres-dt1.pega.net" `
+#  -BaseUrl "https://<host>" `
 #  -WebNode "Pega-web-6d9d95dd7f-ws7c9" `
 #  -Iterations 5 `
 #  -DelayInSeconds 5 `
@@ -11,14 +11,14 @@
 #.\threads-dump-oauth2.ps1 -BaseUrl "..." -WebNode "..." -Iterations 5 -BearerToken "your-token-here"
 
 #powershell.\threads-dump-oauth2.ps1 `
-#  -BaseUrl "https://comaus-acres-dt1.pega.net" `
+#  -BaseUrl "https://<host>" `
 #  -WebNode "Pega-web-6d9d95dd7f-ws7c9" `
 #  -Iterations 5 `
 #  -DelayInSeconds 5 `
 #  -ClientId "your-client-id" `
 #  -ClientSecret "your-client-secret" `
 #  -TokenEndpoint "https://your-oauth-server/oauth/token"
-#.\threads-dump-oauth2.ps1 -BaseUrl "https://comaus-acres-STG2.pega.net" -WebNode "pega-web-5dd6b6754f-7zspb"" -Iterations 5 -ClientId "OAuth 2.0 Client Registration in Pega ClientID" -ClientSecret "OAuth 2.0 Client Registration in Pega Secret" -TokenEndpoint "https://comaus-acres-stg2.pega.net/prweb/PRRestService/oauth2/v1/token"
+#.\threads-dump-oauth2.ps1 -BaseUrl "https://<host>" -WebNode "your node id" -Iterations 5 -ClientId "OAuth 2.0 Client Registration in Pega ClientID" -ClientSecret "OAuth 2.0 Client Registration in Pega Secret" -TokenEndpoint "https://<host>/prweb/PRRestService/oauth2/v1/token"
 
 param(
     [Parameter(Mandatory=$true)]
