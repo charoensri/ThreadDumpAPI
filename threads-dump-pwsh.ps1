@@ -2,7 +2,7 @@
 #
 #
 #.\threads-dump-secure.ps1 `
-#  -BaseUrl "https://comaus-acres-dt1.pega.net" `
+#  -BaseUrl "https://<host>" `
 #  -WebNode "Pega-web-6d9d95dd7f-ws7c9" `
 #  -Iterations 5 `
 #  -DelayInSeconds 5
