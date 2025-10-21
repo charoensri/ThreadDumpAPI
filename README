@@ -1,4 +1,4 @@
-﻿Pega API to dump threads
+﻿Pega API to dump threads - using Invoke-WebRequest -Uri "$BaseUrl/prweb/api/v1/nodes/$WebNode/diagnostics/thread_dump"
 
 Shell terminal:
 PowerShell.exe -ExecutionPolicy Bypass
@@ -67,3 +67,4 @@ Logging script activity to pega-web-5f76988bfc-gz4wv_thread_dump_log_20250914_14
 2025-09-14 14:10:35 - Individual log files removed. Only archive remains.
 2025-09-14 14:10:35 - Script completed successfully.
 PS C:\0-sc\TDTools>
+
