@@ -1,7 +1,7 @@
 ﻿Pega API to dump threads
 With Pega OAuth2 Client Registration
 
-PS C:\0-sc\TDTools> .\threads-dump-oauth2.ps1 -BaseUrl "https://comaus-acres-STG2.pega.net" -WebNode "pega-web-5dd6b6754f-7zspb" -Iterations 5 -ClientId "<YOUR Pega Client Registration ClientID>" -ClientSecret "YOUR Pega Client Registration Secret" -TokenEndpoint "https://comaus-acres-stg2.pega.net/prweb/PRRestService/oauth2/v1/token"
+PS C:\0-sc\TDTools> .\threads-dump-oauth2.ps1 -BaseUrl "https://comaus-acres-STG2.pega.net" -WebNode "pega-web-5dd6b6754f-7zspb" -Iterations 5 -ClientId "<YOUR Pega Client Registration ClientID>" -ClientSecret "YOUR Pega Client Registration Secret" -TokenEndpoint "https://<host>/prweb/PRRestService/oauth2/v1/token"
 Obtaining OAuth2 token using client credentials flow...
 Successfully obtained OAuth2 token
 Logging script activity to logs\pega-web-5dd6b6754f-7zspb_thread_dump_log_20250915_114703.txt
@@ -38,4 +38,5 @@ Logging script activity to logs\pega-web-5dd6b6754f-7zspb_thread_dump_log_202509
 2025-09-15 11:47:32 - Individual dump files removed. Archive and log file remain.
 2025-09-15 11:47:32 - Script completed.
 PS C:\0-sc\TDTools>
+
 
