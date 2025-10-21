@@ -1,7 +1,11 @@
 ﻿Pega API to dump threads
-With Pega OAuth2 Client Registration
 
-PS C:\0-sc\TDTools> .\threads-dump-oauth2.ps1 -BaseUrl "https://comaus-acres-STG2.pega.net" -WebNode "pega-web-5dd6b6754f-7zspb" -Iterations 5 -ClientId "<YOUR Pega Client Registration ClientID>" -ClientSecret "YOUR Pega Client Registration Secret" -TokenEndpoint "https://<host>/prweb/PRRestService/oauth2/v1/token"
+Shell terminal:
+PowerShell.exe -ExecutionPolicy Bypass
+
+
+
+PS C:\0-sc\TDTools> .\threads-dump-oauth2.ps1 -BaseUrl "https://<HOST>" -WebNode "pega-web-5dd6b6754f-7zspb" -Iterations 5 -ClientId "<YOUR Pega Client Registration ClientID>" -ClientSecret "YOUR Pega Client Registration Secret" -TokenEndpoint "https://<host>/prweb/PRRestService/oauth2/v1/token"
 Obtaining OAuth2 token using client credentials flow...
 Successfully obtained OAuth2 token
 Logging script activity to logs\pega-web-5dd6b6754f-7zspb_thread_dump_log_20250915_114703.txt
@@ -39,4 +43,27 @@ Logging script activity to logs\pega-web-5dd6b6754f-7zspb_thread_dump_log_202509
 2025-09-15 11:47:32 - Script completed.
 PS C:\0-sc\TDTools>
 
+For Pega BasicAuth user/pwd
+./threads-dump-pwsh.ps1 -BaseUrl "https://<HOST>" -WebNode "pega-web-5f76988bfc-gz4wv" -Iterations 5 -DelayInSeconds 5 -MaxRetries 3
 
+PS C:\0-sc\TDTools> ./threads-dump-pwsh.ps1 -BaseUrl "https://<HOST>" -WebNode "pega-web-5f76988bfc-gz4wv" -Iterations 5 -DelayInSeconds 5 -MaxRetries 3
+Logging script activity to pega-web-5f76988bfc-gz4wv_thread_dump_log_20250914_140958.txt
+2025-09-14 14:09:58 - Starting iteration 1 of 5
+2025-09-14 14:09:58 - Saving thread dump to logs\pega-web-5f76988bfc-gz4wv_20250914_140958.zip
+2025-09-14 14:10:02 - Saved successfully: logs\pega-web-5f76988bfc-gz4wv_20250914_140958.zip
+2025-09-14 14:10:07 - Starting iteration 2 of 5
+2025-09-14 14:10:07 - Saving thread dump to logs\pega-web-5f76988bfc-gz4wv_20250914_141007.zip
+2025-09-14 14:10:09 - Saved successfully: logs\pega-web-5f76988bfc-gz4wv_20250914_141007.zip
+2025-09-14 14:10:14 - Starting iteration 3 of 5
+2025-09-14 14:10:14 - Saving thread dump to logs\pega-web-5f76988bfc-gz4wv_20250914_141014.zip
+2025-09-14 14:10:16 - Saved successfully: logs\pega-web-5f76988bfc-gz4wv_20250914_141014.zip
+2025-09-14 14:10:21 - Starting iteration 4 of 5
+2025-09-14 14:10:21 - Saving thread dump to logs\pega-web-5f76988bfc-gz4wv_20250914_141021.zip
+2025-09-14 14:10:23 - Saved successfully: logs\pega-web-5f76988bfc-gz4wv_20250914_141021.zip
+2025-09-14 14:10:28 - Starting iteration 5 of 5
+2025-09-14 14:10:28 - Saving thread dump to logs\pega-web-5f76988bfc-gz4wv_20250914_141028.zip
+2025-09-14 14:10:30 - Saved successfully: logs\pega-web-5f76988bfc-gz4wv_20250914_141028.zip
+2025-09-14 14:10:35 - Compressed logs into archive: pega-web-5f76988bfc-gz4wv_thread_dumps_20250914_141035.zip
+2025-09-14 14:10:35 - Individual log files removed. Only archive remains.
+2025-09-14 14:10:35 - Script completed successfully.
+PS C:\0-sc\TDTools>
